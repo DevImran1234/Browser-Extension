@@ -1,0 +1,40 @@
+{
+    "name": "Browser Lock",
+    "short_name": "Browser Guard",
+    "version": "1.0",
+    "description": "Locks Your Browser With a Password so that no one can access it except you.",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "options_page": "options/index.html",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "windows",
+        "tabs"  ,
+        "<all_urls>",
+        "webRequest",
+     "webRequestBlocking",
+     "tabs",
+     "background",
+     "http://*/*",
+     "https://*/*"
+     
+    ],
+      
+    "browser_action": {
+        "default_title": "BrowserLock",
+        "default_icon": "icons/Browserlocker.png",
+        "default_popup": "popup.html"
+        },
+    "icons": {
+        "128": "icons/128.png",
+        "64": "icons/64.png",
+        "48": "icons/48.png",
+        "16": "icons/16.png"
+        
+    }
+
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: -300px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        margin-top: -300px;
+    }
+    to {
+        margin-top: 50px; 
+    }
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 97%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+/* Button styles */
+button {
+    width: 48%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: -300px auto 20px; 
+    width: 200px;
+    height: 200px;
+    animation: slideInLogo 0.5s ease forwards;
+}
+
+@keyframes slideInLogo {
+    from {
+        margin-top: -300px; 
+    }
+    to {
+        margin-top: 0; 
+    }
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #666;
+}
