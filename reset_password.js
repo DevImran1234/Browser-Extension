@@ -11,7 +11,7 @@ document.getElementById("reset").addEventListener("click", function () {
           document.getElementById("code").style.display = "block";
           document.getElementById("verify").style.display = "block";
         } else {
-          alert("Failed to send reset code. Please try again.");
+          alert("Failed to send reset code. Please try again. " + (response.error || ''));
         }
       }
     );
